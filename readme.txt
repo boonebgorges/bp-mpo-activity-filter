@@ -20,7 +20,7 @@ I borrowed the idea, and a little bit of the code, from this plugin: http://blog
 
 == Installation ==
 
-*Upload the directory '/bp-mpo-activity-filter/' to your WP plugins directory and activate from the Dashboard of the main blog.
+* Upload the directory '/bp-mpo-activity-filter/' to your WP plugins directory and activate from the Dashboard of the main blog.
 
 == Changelog ==
 
