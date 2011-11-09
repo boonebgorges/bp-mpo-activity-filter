@@ -4,7 +4,7 @@ Tags: buddypress, activity, privacy, more privacy options, filter
 Requires at least: WP 2.8, BuddyPress 1.2
 Tested up to: WP 3.2.1, BuddyPress 1.5.1
 Donate link: http://teleogistic.net/donate/
-Stable tag: 1.1
+Stable tag: 1.1.1
 
 When using More Privacy Options, this plugin removes items from BP activity streams according to user roles.
 
@@ -23,6 +23,9 @@ I borrowed the idea, and a little bit of the code, from this plugin: http://blog
 * Upload the directory '/bp-mpo-activity-filter/' to your WP plugins directory and activate from the Dashboard of the main blog.
 
 == Changelog ==
+
+= 1.1.1 =
+* Oops
 
 = 1.1 =
 * Upgraded to reduce unnecessary switch_to_blog()
