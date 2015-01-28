@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== BP MPO Activity Filter ===
 Contributors: boonebgorges, cuny-academic-commons
 Tags: buddypress, activity, privacy, more privacy options, filter
 Requires at least: WP 2.8, BuddyPress 1.2
