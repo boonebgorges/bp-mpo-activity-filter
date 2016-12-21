@@ -17,7 +17,7 @@ function bp_mpo_activity_filter( $has_activities, $activities, $template_args ) 
 		return $has_activities;
 
 	foreach ( $activities->activities as $key => $activity ) {
-		if ( $activity->type == 'new_blog_post' || $activity->type == 'new_blog_comment' ) {
+		if ( $activity->type == 'new_blog' || $activity->type == 'new_blog_post' || $activity->type == 'new_blog_comment' ) {
 
 			$current_user = $bp->loggedin_user->id;
 
