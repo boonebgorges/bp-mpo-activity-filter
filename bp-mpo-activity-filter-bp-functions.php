@@ -13,6 +13,9 @@
 function bp_mpo_activity_filter( $has_activities, $activities, $template_args ) {
 	global $bp;
 
+	if ( is_super_admin() )
+		return $has_activities;
+
 	/**
 	 * List of activity types that this plugin filters.
 	 *
@@ -25,9 +28,6 @@ function bp_mpo_activity_filter( $has_activities, $activities, $template_args ) 
 		'new_groupblog_post',
 		'new_groupblog_comment',
 	] );
-
-	if ( is_super_admin() )
-		return $has_activities;
 
 	foreach ( $activities->activities as $key => $activity ) {
 		if ( in_array( $activity->type, $activity_types ) ) {
