@@ -13,11 +13,24 @@
 function bp_mpo_activity_filter( $has_activities, $activities, $template_args ) {
 	global $bp;
 
+	/**
+	 * List of activity types that this plugin filters.
+	 *
+	 * @param array $activity_types List of activity type identifiers.
+	 */
+	$activity_types = apply_filter( 'bp_mpo_activity_types', [
+		'new_blog',
+		'new_blog_post',
+		'new_blog_comment',
+		'new_groupblog_post',
+		'new_groupblog_comment',
+	] );
+
 	if ( is_super_admin() )
 		return $has_activities;
 
 	foreach ( $activities->activities as $key => $activity ) {
-		if ( $activity->type == 'new_blog' || $activity->type == 'new_blog_post' || $activity->type == 'new_blog_comment' ) {
+		if ( in_array( $activity->type, $activity_types ) ) {
 
 			$current_user = $bp->loggedin_user->id;
 
