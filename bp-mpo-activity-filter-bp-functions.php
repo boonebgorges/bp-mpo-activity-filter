@@ -18,7 +18,7 @@ function bp_mpo_activity_filter( $has_activities, $activities, $template_args ) 
 	 *
 	 * @param array $activity_types List of activity type identifiers.
 	 */
-	$activity_types = apply_filter( 'bp_mpo_activity_types', [
+	$activity_types = apply_filters( 'bp_mpo_activity_types', [
 		'new_blog',
 		'new_blog_post',
 		'new_blog_comment',
