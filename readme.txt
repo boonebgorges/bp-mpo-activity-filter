@@ -24,6 +24,12 @@ I borrowed the idea, and a little bit of the code, from this plugin: http://blog
 
 == Changelog ==
 
+= 1.2.1 =
+* Fixed bug in activity filter callback.
+* Fixed bug that caused new_blog activity items not to be filtered properly.
+* Fixed compatibility with BP Groupblog.
+* Added filter for additional activity types.
+
 = 1.2 =
 * Refactored some queries to avoid unnecessary switch_to_blog() usage
 
