@@ -1,10 +1,10 @@
 === BP MPO Activity Filter ===
 Contributors: boonebgorges, cuny-academic-commons
 Tags: buddypress, activity, privacy, more privacy options, filter
-Requires at least: WP 2.8, BuddyPress 1.2
-Tested up to: WP 3.4.2, BuddyPress 1.6.1
+Requires at least: 3.5
+Tested up to: 4.9
 Donate link: http://teleogistic.net/donate/
-Stable tag: 1.2
+Stable tag: 1.2.1
 
 When using More Privacy Options, this plugin removes items from BP activity streams according to user roles.
 
@@ -16,7 +16,7 @@ This plugin, BP MPO Activity Filter, does just what the name suggests: it filter
 
 Activity items stored with BP 1.1.3 or lower have a slightly different data format, which makes them incompatible with this plugin.
 
-I borrowed the idea, and a little bit of the code, from this plugin: http://blogs.zmml.uni-bremen.de/olio. 
+I borrowed the idea, and a little bit of the code, from this plugin: http://blogs.zmml.uni-bremen.de/olio.
 
 == Installation ==
 
