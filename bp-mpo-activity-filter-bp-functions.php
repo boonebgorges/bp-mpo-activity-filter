@@ -21,13 +21,13 @@ function bp_mpo_activity_filter( $has_activities, $activities, $template_args ) 
 	 *
 	 * @param array $activity_types List of activity type identifiers.
 	 */
-	$activity_types = apply_filters( 'bp_mpo_activity_types', [
+	$activity_types = apply_filters( 'bp_mpo_activity_types', array(
 		'new_blog',
 		'new_blog_post',
 		'new_blog_comment',
 		'new_groupblog_post',
 		'new_groupblog_comment',
-	] );
+	) );
 
 	foreach ( $activities->activities as $key => $activity ) {
 		if ( in_array( $activity->type, $activity_types ) ) {
