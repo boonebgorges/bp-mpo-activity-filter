@@ -3,6 +3,7 @@ Contributors: boonebgorges, cuny-academic-commons
 Tags: buddypress, activity, privacy, more privacy options, filter
 Requires at least: 3.5
 Tested up to: 5.0
+Requires PHP: 5.3
 Donate link: http://teleogistic.net/donate/
 Stable tag: 1.3.0
 
