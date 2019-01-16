@@ -35,7 +35,7 @@ function bp_mpo_activity_filter( $has_activities, $activities, $template_args ) 
 			$current_user = $bp->loggedin_user->id;
 
 			// Account for bp-groupblog
-			if ( $activity->component == 'groups' ) {
+			if ( $activity->component == 'groups' && bp_is_active( 'groups' ) && 0 === strpos( $activity->type, 'new_groupblog_' ) ) {
 				$group_id = $activity->item_id;
 				$blog_id = groups_get_groupmeta( $group_id, 'groupblog_blog_id' );
 			} else {
