@@ -5,7 +5,7 @@ Requires at least: 3.5
 Tested up to: 5.0
 Requires PHP: 5.3
 Donate link: http://teleogistic.net/donate/
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 
 When using More Privacy Options, this plugin removes items from BP activity streams according to user roles.
 
@@ -24,6 +24,9 @@ I borrowed the idea, and a little bit of the code, from this plugin: http://blog
 * Upload the directory '/bp-mpo-activity-filter/' to your WP plugins directory and activate from the Dashboard of the main blog.
 
 == Changelog ==
+
+= 1.3.1 =
+* Fixes PHP 5.3 incompatibility
 
 = 1.3.0 =
 * Fixed bugs when checking for component activation
