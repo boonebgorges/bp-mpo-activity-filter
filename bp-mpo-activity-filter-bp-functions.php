@@ -90,9 +90,10 @@ function bp_mpo_activity_filter( $has_activities, $activities, $template_args ) 
 
 						$user = new WP_User( $current_user );
 
-						if ( in_array( 'administrator', $user->roles ) )
+						if ( in_array( 'administrator', $user->roles ) ) {
+							restore_current_blog();
 							continue 2;
-						else {
+						} else {
 							$remove_from_stream = true;
 						}
 						restore_current_blog();
