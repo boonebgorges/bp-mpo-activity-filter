@@ -125,3 +125,21 @@ function bp_mpo_activity_count() {
 	return '20';
 }
 add_action( 'bp_get_activity_count', 'bp_mpo_activity_count' );
+
+/**
+ * Prevent activity from private sites to be visible in sitewide stream.
+ *
+ * We deem a site as private, if the Site Visibility setting is anything
+ * but "Allow search engines to index this site". If a site is private,
+ * we set the 'hide_sitewide' activity flag to 1.
+ *
+ * @param BP_Activity_Activity $activity Activity object.
+ */
+function bp_mpo_set_hide_sitewide_for_private_sites( $activity ) {
+	$privacy = (int) get_option( 'blog_public' );
+
+	if ( $privacy < 1 ) {
+		$activity->hide_sitewide = 1;
+	}
+}
+add_action( 'bp_activity_before_save', 'bp_mpo_set_hide_sitewide_for_private_sites', 0 );
