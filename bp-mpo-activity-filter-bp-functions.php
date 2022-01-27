@@ -136,7 +136,11 @@ add_action( 'bp_get_activity_count', 'bp_mpo_activity_count' );
  * @param BP_Activity_Activity $activity Activity object.
  */
 function bp_mpo_set_hide_sitewide_for_private_sites( $activity ) {
-	$privacy = (int) get_option( 'blog_public' );
+	if ( 'blogs' !== $activity->component ) {
+		return;
+	}
+
+	$privacy = (int) get_blog_option( $activity->item_id, 'blog_public' );
 
 	if ( $privacy < 1 ) {
 		$activity->hide_sitewide = 1;
