@@ -25,6 +25,10 @@ I borrowed the idea, and a little bit of the code, from this plugin: http://blog
 
 == Changelog ==
 
+= 1.3.3 =
+* Fixes bug where switch_to_blog() routine may not be reset during certain sequences.
+* Ensures that private site activity is not shown in public stream.
+
 = 1.3.2 =
 * Improves PHP 7 compatibility
 
